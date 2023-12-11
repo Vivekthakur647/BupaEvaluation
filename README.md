@@ -1,5 +1,5 @@
 # BupaEvaluation
-This is evoluation test for Bupa where below is requirements for me ::
+This is evaluation test for Bupa where below is requirements for me ::
 
 Vivek---
 
