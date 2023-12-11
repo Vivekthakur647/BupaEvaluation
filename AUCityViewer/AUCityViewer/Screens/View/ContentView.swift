@@ -15,13 +15,13 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(viewModel.uscities) { article in
-                    Section(header: Text("\(article.city ?? Constants.emptyCity)").font(.system(size: 22)).bold().foregroundColor(Color.ColorPrimary)) {
+                    Section(header: Text("\(article.admin_name ?? Constants.emptyAdmin)").font(.system(size: 22)).bold().foregroundColor(Color.ColorPrimary)) {
                         Text("\(Constants.Country) : \(article.country ?? Constants.emptyCapital)").foregroundColor(Color.TextColorPrimary)
                         Text("\(Constants.Capital) : \(article.capital ?? Constants.emptyCapital)").foregroundColor(Color.TextColorPrimary)
                         Text("\(Constants.Population) : \(article.population ?? Constants.emptyPopulation)").foregroundColor(Color.TextColorPrimary)
                         Text("\(Constants.Lat) : \(article.lat ?? Constants.emptyLat)").foregroundColor(Color.TextColorPrimary)
                         Text("\(Constants.Long) : \(article.lng ?? Constants.emptyLong)").foregroundColor(Color.TextColorPrimary)
-                        Text("\(Constants.Admin) : \(article.admin_name ?? Constants.emptyAdmin)").foregroundColor(Color.TextColorPrimary)
+                        Text("\(Constants.City) : \(article.city ?? Constants.emptyAdmin)").foregroundColor(Color.TextColorPrimary)
                         
                     }.textCase(nil)
                 }
@@ -38,9 +38,9 @@ struct ContentView: View {
                         
                         Button {
                             if isSorted {
-                                viewModel.uscities = viewModel.uscities.sorted { $0.city?.lowercased() ?? "" < $1.city?.lowercased() ?? "" }
+                                viewModel.uscities = viewModel.uscities.sorted { $0.admin_name?.lowercased() ?? "" < $1.admin_name?.lowercased() ?? "" }
                             } else {
-                                viewModel.uscities = viewModel.uscities.sorted { $0.city?.lowercased() ?? "" > $1.city?.lowercased() ?? "" }
+                                viewModel.uscities = viewModel.uscities.sorted { $0.admin_name?.lowercased() ?? "" > $1.admin_name?.lowercased() ?? "" }
                             }
                             isSorted = !isSorted
                         } label: {

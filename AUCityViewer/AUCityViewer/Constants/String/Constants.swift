@@ -16,6 +16,7 @@ struct Constants {
     static let Refresh = "Refresh"
     static let sort = "sort"
     
+    static let City = "City"
     static let Country = "Country"
     static let Capital = "Capital"
     static let Population = "Population"
