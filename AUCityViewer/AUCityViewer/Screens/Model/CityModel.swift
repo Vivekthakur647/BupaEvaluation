@@ -2,8 +2,10 @@
 
 import Foundation
 
-struct CityResponse: Codable  {
-    let articles : [Cities]?
+struct CityResponse: Codable, Identifiable{
+    var id = UUID()
+    let adminNameSection : String?
+    var articles : [Cities]?
 }
 
 struct Cities: Codable , Identifiable {

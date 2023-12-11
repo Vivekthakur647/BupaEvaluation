@@ -7,7 +7,7 @@
 
 import XCTest
 import XCTest
-@testable import Bupa_AUCities
+@testable import AUCityViewer
 
 final class ContentViewTest: XCTestCase {
     var viewModel: ViewModel!

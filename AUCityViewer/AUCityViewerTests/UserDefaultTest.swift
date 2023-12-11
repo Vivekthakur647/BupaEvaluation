@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import Bupa_AUCities
+@testable import AUCityViewer
 final class UserDefaultTest: XCTestCase {
     func testGetDarkTheme() {
         let mode = UserDefaultsUtils.shared.getDarkMode()
