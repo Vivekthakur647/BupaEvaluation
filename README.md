@@ -19,4 +19,5 @@ OutCome
 3. Added sorting button to change the order on every click (Action performed in video output)
 4. Added Dark and Light theme in app action to perform
 5. Added unit test with code coverage screenshot
+6. Additionaly added a refresh button to load data as per json file format
   
