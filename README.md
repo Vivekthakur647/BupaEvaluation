@@ -16,6 +16,7 @@ any enhancements you feel demonstrates your ability
 OutCome 
 1. Showing list of AU city with colapsable list
 2. On first lauch showing city in default order as json file
-3. Add sorting button change the order on every click (Action performed in video output)
+3. Added sorting button to change the order on every click (Action performed in video output)
 4. Added Dark and Light theme in app action to perform
 5. Added unit test with code coverage screenshot
+  
